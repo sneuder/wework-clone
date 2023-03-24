@@ -1,0 +1,21 @@
+{
+  "links": [
+    {
+      "text": "Find a Location"
+    },
+    {
+      "text": "Solutions"
+    },
+    {
+      "text": "Enterprise"
+    }
+  ],
+  "otherLinks": {
+    "contact": {
+      "text": "Contact Us"
+    },
+    "login": {
+      "text": "Member Log In"
+    }
+  }
+}

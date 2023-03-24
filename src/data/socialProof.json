@@ -1,0 +1,24 @@
+{
+  "header": "Empowering tomorrow’s world at work",
+  "description": "For over a decade, we’ve been leading the future of flexible work. From freelancers to Fortune 500s, we’re helping our members reimagine the ways they work.",
+  "companies": [
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/6RWiW6nRjE0Opu3rMrmyNA/46e4a7a7cec8a942949693ef532f6012/logo_microsoft.png?auto=format%20compress&fit=crop&q=50&w=100"
+    },
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/557AtRn8tgjcVnmrXM5dPK/c6cc549473c56a285007f57a57b4bd94/pfizer.png?auto=format%20compress&fit=crop&q=50&w=100"
+    },
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/6ucfeSUkXAQhX3LvdjHaL4/53586fbd893593b8ce3b2c3904160cd9/samsung.png?auto=format%20compress&fit=crop&q=50&w=100"
+    },
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/4UwH80gQwn4Bzsgsppp6oc/fb1ddac85d9a2724a124114933713917/Salesforce_logo.png?auto=format%20compress&fit=crop&q=50&w=100"
+    },
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/3f7ZKaZZF7tSAQfCA7Zs8P/41ea5b9545b4f293661db6cf95c80d78/visa.png?auto=format%20compress&fit=crop&q=50&w=100"
+    },
+    {
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/2UDkm4Ldvxo5l1cdbNrGXn/8d4b43b9e9dd33b966b94304a130dc32/zoom.png?auto=format%20compress&fit=crop&q=50&w=100"
+    }
+  ]
+}
