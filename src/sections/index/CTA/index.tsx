@@ -1,6 +1,6 @@
-import { HorizontalContainer, Section } from "../elements";
+import { Section } from "../elements";
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
-import { ImageCTA, RightSide } from "./elements";
+import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
 import Paragraph from "@/shared/copies/paragraph";
 import Direction from "@/components/direction";
 import Tag from "@/components/tag";

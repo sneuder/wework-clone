@@ -7,7 +7,7 @@ export const HorizontalContainer = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 0px 40px;
+  padding: 0px 60px;
   display: flex;
   flex-direction: column;
   gap: 30px;

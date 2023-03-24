@@ -5,6 +5,8 @@ import Navbar from "@/layouts/navbar";
 import Solutions from "@/sections/index/solutions";
 import SocialProof from "@/sections/index/socialProof";
 import CTA from "@/sections/index/CTA";
+import Sizes from "@/sections/index/sizes";
+import Form from "@/sections/index/form";
 
 import linksNavbarInfo from "@/data/linksNavbar.json";
 import linksFooterInfo from "@/data/linksFooter.json";
@@ -19,6 +21,8 @@ export default function Home({ navbarInfo, socialProof, solutions }) {
       <Navbar linkInfo={navbarInfo} />
       <Solutions solutionsInfo={solutions} />
       <CTA />
+      <Sizes />
+      <Form />
       <SocialProof socialInfo={socialProof} />
     </MainWrapper>
   );

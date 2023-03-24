@@ -1,6 +1,6 @@
 import CompanyCards from "@/components/companyCards";
 import { Section } from "../elements";
-import { HorizontalContainer } from "../elements";
+import { HorizontalContainer } from "./elements";
 import Direction from "@/components/direction";
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
 import Paragraph from "@/shared/copies/paragraph";
