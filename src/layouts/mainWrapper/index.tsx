@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import { Container } from "./elements";
-
-const inter = Inter({ subsets: ["latin"] });
+import WhatsappButton from "@/components/whatsappButton";
 
 const MainWrapper = ({ children }: any) => {
   return (
@@ -42,7 +40,10 @@ const MainWrapper = ({ children }: any) => {
           href="/vanilla-assets/stylesheets/vendor.bc11321946874dd2d91a972acd538f05.css"
         />
       </Head>
-      <Container>{children}</Container>
+      <Container>
+        <WhatsappButton />
+        {children}
+      </Container>
     </>
   );
 };

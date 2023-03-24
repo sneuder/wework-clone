@@ -49,7 +49,12 @@ export const LinkText = styled(Link)`
 `;
 
 export const Menu = styled(GiHamburgerMenu)`
+  display: none;
   width: 23px;
   height: auto;
   cursor: pointer;
+
+  @media (max-width: 1195px) {
+    display: block;
+  }
 `;
