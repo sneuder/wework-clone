@@ -1,7 +1,7 @@
-import { Header } from "./elements";
+import { SecondHeader } from "./elements";
 
-const SecondaryHeader = ({ textHeader }) => {
-  return <Header>{textHeader}</Header>;
+const SecondaryHeader = ({ textHeader }: any) => {
+  return <SecondHeader>{textHeader}</SecondHeader>;
 };
 
 export default SecondaryHeader;

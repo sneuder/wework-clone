@@ -3,6 +3,7 @@ import { HorizontalContainer, LeftSide, ContainerImage } from "./elements";
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
 import Paragraph from "@/shared/copies/paragraph";
 import Direction from "@/components/direction";
+import TextTag from "@/components/textTag";
 
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ const Network = () => {
     <Section secondary>
       <HorizontalContainer>
         <LeftSide>
+          <TextTag />
           <SecondaryHeader
             textHeader={"Workspace where and when you need it"}
           />
