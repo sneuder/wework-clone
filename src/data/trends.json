@@ -1,0 +1,30 @@
+{
+  "tag": "IDEAS BY WEWORK",
+  "header": "Workplace trends and insights",
+  "mainTrend": {
+    "tag": "research studies",
+    "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/5UOT0oT5krYm9t37ixk9zy/548775ae2e1430481ca24cf38204cfaa/Web_72DPI-20200313_WeWork_Salesforce-Tower-Atrium-San-Francisco_001.jpg?auto=compress&fit=crop&q=50&fm=jpeg&w=750&h=422",
+    "header": "The importance of flexible office spaces",
+    "description": "A Cushman & Wakefield survey finds flexible offices are an important component of the workplace ecosystem."
+  },
+  "trends":[
+    {
+      "tag": "flexible products",
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/fmB4E8GeWAFzlAAwH7YJe/74d1c7ec6f88513f6cfe431b6c0ca211/WeWork_The-Wilson_7272-Wisconsin-Ave_Bethesda_4_header-scaled.jpg?auto=compress&fit=crop&q=50&fm=jpeg&w=450&h=253",
+      "header": "A cutting-edge workspace near Washington, D.C.",
+      "description": "WeWork The Wilson is custom-designed for its home community"
+    },
+    {
+      "tag": "case studies",
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/2lbHRv6oDxMnWDsuIPpd4Y/3fcc904abd7e9fcce1adb7a74bb71a9c/ElephantSkin_Miami_WeWork02_v1-800x450.jpg?auto=compress&fit=crop&q=50&fm=jpeg&w=450&h=253",
+      "header": "How one remote creative agency went global, fasts",
+      "description": "Elephant Skin embraced remote work and office space at WeWork to create a global business"
+    },
+    {
+      "tag": "case studies",
+      "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/4GkcQ3suRb1BFE94sKlW4c/8a323151d003ffa6cdc6c4db73307007/ATLAS_9385_EDIT_v1-1536x864.jpg?auto=compress&fit=crop&q=50&fm=jpeg&w=450&h=253",
+      "header": "How four founders use WeWork All Access",
+      "description": "For these founders, workspace helps grow their company and culture."
+    }
+  ]
+}

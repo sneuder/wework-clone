@@ -9,25 +9,28 @@ import CTA from "@/sections/index/CTA";
 import Sizes from "@/sections/index/sizes";
 import Form from "@/sections/index/form";
 import Network from "@/sections/index/network";
+import Trends from "@/sections/index/trends";
 
 import linksNavbarInfo from "@/data/linksNavbar.json";
 import linksFooterInfo from "@/data/linksFooter.json";
 import socialProofInfo from "@/data/socialProof.json";
 import solutionsInfo from "@/data/solutions.json";
+import trendsInfo from "@/data/trends.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ navbarInfo, socialProof, solutions }) {
+export default function Home({ navbarInfo, socialProof, solutions, trends }) {
   return (
     <MainWrapper>
       <Navbar linkInfo={navbarInfo} />
-      <Heroe />
+      {/* <Heroe /> */}
       <Solutions solutionsInfo={solutions} />
       <CTA />
-      <Sizes />
+      {/* <Sizes /> */}
       <Form />
       <Network />
       <SocialProof socialInfo={socialProof} />
+      <Trends trendsInfo={trends} />
     </MainWrapper>
   );
 }
@@ -39,6 +42,7 @@ export async function getStaticProps() {
       footerInfo: linksFooterInfo,
       socialProof: socialProofInfo,
       solutions: solutionsInfo,
+      trends: trendsInfo,
     },
   };
 }
