@@ -11,6 +11,10 @@ export const Form = styled.form`
   gap: 24px;
   align-items: flex-start;
 
+  @media (max-width: 1195px) {
+    padding: 3rem 2rem 3rem;
+  }
+
   @media (max-width: 600px) {
     padding: 0px;
     align-items: stretch;

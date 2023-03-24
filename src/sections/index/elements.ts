@@ -11,5 +11,9 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: ${(props) => (props.secondary ? "#f7f7f7" : "#fff")};
+  background-color: ${(props) => (props.secondary ? "#f7f7f7" : "transparent")};
+
+  @media (max-width: 1195px) {
+    padding: 0px 40px;
+  }
 `;

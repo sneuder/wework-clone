@@ -12,6 +12,12 @@ body {
     "Helvetica Neue", Helvetica, "Calibri", "Roboto", Arial, sans-serif;
 }
 
+@media (max-width: 1195px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
 a {
   text-decoration: none;
 }

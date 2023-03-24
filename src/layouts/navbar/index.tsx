@@ -1,4 +1,11 @@
-import { Container, ContainerCTA, ContainerLinks, LinkText } from "./elements";
+import {
+  Container,
+  ContainerCTA,
+  ContainerLinks,
+  LinkText,
+  Menu,
+} from "./elements";
+
 import SecondaryButton from "@/shared/buttons/secondary";
 import Branch from "@/shared/branch";
 
@@ -6,6 +13,7 @@ const Navbar = ({ linkInfo }) => {
   return (
     <Container>
       <ContainerLinks>
+        <Menu />
         <Branch />
         {linkInfo.links.map(({ text }) => (
           <LinkText
