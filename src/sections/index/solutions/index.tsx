@@ -1,5 +1,5 @@
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
-import { Section } from "./elements";
+import { Section } from "../elements";
 import { HorizontalContainer } from "../elements";
 import SolutionsCards from "@/components/solutionsCards";
 import Direction from "@/components/direction";

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.nav`
+  background: #fff;
   position: fixed;
   top: 0;
   padding: 20px 60px;
