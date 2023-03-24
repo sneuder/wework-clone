@@ -5,11 +5,13 @@ export const HorizontalContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 `;
 
 export const ImageCTA = styled(Image)`
   border-radius: 0.25rem;
+  height: auto;
+  width: 100%;
 `;
 
 export const RightSide = styled.div`

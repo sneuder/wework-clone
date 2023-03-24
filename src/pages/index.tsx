@@ -12,6 +12,7 @@ import linksNavbarInfo from "@/data/linksNavbar.json";
 import linksFooterInfo from "@/data/linksFooter.json";
 import socialProofInfo from "@/data/socialProof.json";
 import solutionsInfo from "@/data/solutions.json";
+import Network from "@/sections/index/network";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home({ navbarInfo, socialProof, solutions }) {
       <CTA />
       <Sizes />
       <Form />
+      <Network />
       <SocialProof socialInfo={socialProof} />
     </MainWrapper>
   );
