@@ -1,52 +1,69 @@
 import { Form, ContainerInputs, Policy } from "./elements";
-import TextField from "@mui/material/TextField";
+import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
+import { ParagraphElement } from "@/shared/copies/paragraph/elements";
+import { TextField, FormControl, InputLabel, Select } from "@mui/material";
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
 import Paragraph from "@/shared/copies/paragraph";
-import Button from "@/shared/button";
+import Button from "@/shared/buttons/primary";
 
 const ContactForm = () => {
   return (
     <Form>
-      <SecondaryHeader textHeader={"Let us find your ideal workspace"} />
-      <Paragraph
-        textParagraph={
-          "Complete the form and a WeWork team member will be in touch with you shortly"
-        }
-      />
+      <SecondHeader>Let us find your ideal workspace</SecondHeader>
+      <ParagraphElement secondary>
+        Complete the form and a WeWork team member will be in touch with you
+        shortly
+      </ParagraphElement>
       <ContainerInputs>
         <TextField
           id="outlined-basic"
-          label="Outlined"
+          label="Full name *"
           variant="outlined"
         />
 
         <TextField
           id="outlined-basic"
-          label="Outlined"
+          label="Email addres"
           variant="outlined"
         />
 
         <TextField
           id="outlined-basic"
-          label="Outlined"
+          label="Company name *"
           variant="outlined"
         />
 
         <TextField
           id="outlined-basic"
-          label="Outlined"
+          label="Phone number *"
           variant="outlined"
         />
 
-        <TextField
-          id="outlined-basic"
-          label="Outlined"
-          variant="outlined"
-        />
+        <FormControl>
+          <InputLabel htmlFor="grouped-native-select">Location *</InputLabel>
+          <Select
+            native
+            defaultValue=""
+            id="grouped-native-select"
+            label="Grouping"
+          >
+            <option
+              aria-label="None"
+              value=""
+            />
+            <optgroup label="Argetina">
+              <option value={1}>Buenos Aires</option>
+            </optgroup>
+            <optgroup label="Colombia">
+              <option value={3}>Bogotá</option>
+              <option value={3}>Medellín</option>
+            </optgroup>
+          </Select>
+        </FormControl>
 
         <TextField
           id="outlined-basic"
-          label="Outlined"
+          label="How manny people do you need workspace? *"
           variant="outlined"
         />
       </ContainerInputs>

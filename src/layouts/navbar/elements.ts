@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 export const Container = styled.nav`
   background: #fff;
@@ -21,4 +22,18 @@ export const ContainerCTA = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+`;
+
+export const LinkText = styled(Link)`
+  &:active {
+    color: #000;
+  }
+
+  &:visited {
+    color: #000;
+  }
+
+  @media (max-width: 1195px) {
+    display: ${(props) => (props.showdesktop ? "none" : "block")};
+  }
 `;

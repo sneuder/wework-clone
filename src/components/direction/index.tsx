@@ -1,7 +1,7 @@
 import { LinkText } from "./element";
 
-const Direction = () => {
-  return <LinkText href={"/"}>View all solution</LinkText>;
+const Direction = ({ children }) => {
+  return <LinkText href={"/"}>{children}</LinkText>;
 };
 
 export default Direction;

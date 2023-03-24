@@ -4,6 +4,15 @@ import Link from "next/link";
 export const Container = styled.div`
   display: flex;
   gap: 1.5rem;
+
+  @media (max-width: 1195px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-column: 2fr;
+  }
 `;
 
 export const Card = styled(Link)`

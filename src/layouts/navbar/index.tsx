@@ -1,6 +1,5 @@
-import { Container, ContainerCTA, ContainerLinks } from "./elements";
-import Button from "@/shared/button";
-import LinkText from "@/shared/copies/linkText";
+import { Container, ContainerCTA, ContainerLinks, LinkText } from "./elements";
+import SecondaryButton from "@/shared/buttons/secondary";
 import Branch from "@/shared/branch";
 
 const Navbar = ({ linkInfo }) => {
@@ -11,13 +10,21 @@ const Navbar = ({ linkInfo }) => {
         {linkInfo.links.map(({ text }) => (
           <LinkText
             key={text}
-            textLink={text}
-          />
+            href={"/"}
+            showdesktop
+          >
+            {text}
+          </LinkText>
         ))}
       </ContainerLinks>
       <ContainerCTA>
-        <Button textButton={linkInfo.otherLinks.contact.text} />
-        <LinkText textLink={linkInfo.otherLinks.login.text} />
+        <SecondaryButton textButton={linkInfo.otherLinks.contact.text} />
+        <LinkText
+          href={"/"}
+          showdesktop
+        >
+          {linkInfo.otherLinks.login.text}
+        </LinkText>
       </ContainerCTA>
     </Container>
   );
