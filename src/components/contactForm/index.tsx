@@ -2,12 +2,13 @@ import { TextField, FormControl, InputLabel, Select } from "@mui/material";
 
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
-
 import Button from "@/shared/button";
+import InputText from "@/shared/inputs/text";
 
 import { Form, ContainerInputs, Policy } from "./elements";
+import InputGroup from "@/shared/inputs/group";
 
-const ContactForm = () => {
+const ContactForm = ({ contactInfo }) => {
   return (
     <Form>
       <SecondHeader>Let us find your ideal workspace</SecondHeader>
@@ -16,57 +17,10 @@ const ContactForm = () => {
         shortly
       </ParagraphElement>
       <ContainerInputs>
-        <TextField
-          id="outlined-basic"
-          label="Full name *"
-          variant="outlined"
-        />
-
-        <TextField
-          id="outlined-basic"
-          label="Email addres"
-          variant="outlined"
-        />
-
-        <TextField
-          id="outlined-basic"
-          label="Company name *"
-          variant="outlined"
-        />
-
-        <TextField
-          id="outlined-basic"
-          label="Phone number *"
-          variant="outlined"
-        />
-
-        <FormControl>
-          <InputLabel htmlFor="grouped-native-select">Location *</InputLabel>
-          <Select
-            native
-            defaultValue=""
-            id="grouped-native-select"
-            label="Grouping"
-          >
-            <option
-              aria-label="None"
-              value=""
-            />
-            <optgroup label="Argetina">
-              <option value={1}>Buenos Aires</option>
-            </optgroup>
-            <optgroup label="Colombia">
-              <option value={3}>Bogotá</option>
-              <option value={3}>Medellín</option>
-            </optgroup>
-          </Select>
-        </FormControl>
-
-        <TextField
-          id="outlined-basic"
-          label="How manny people do you need workspace? *"
-          variant="outlined"
-        />
+        {contactInfo.inputs.map((input) => {
+          if (input.type === "group") return <InputGroup input={input} />;
+          return <InputText input={input} />;
+        })}
       </ContainerInputs>
       <Policy>
         By clicking the button below, you agree to our Terms of Service and

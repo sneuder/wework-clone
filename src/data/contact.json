@@ -1,0 +1,64 @@
+{
+  "inputs": [
+    {
+      "type": "text",
+      "input": "text",
+      "label": "Full name *"
+    },
+    {
+      "type": "text",
+      "input": "text",
+      "label": "Email address *"
+    },
+    {
+      "type": "text",
+      "input": "text",
+      "label": "Company name *"
+    },
+    {
+      "type": "text",
+      "input": "text",
+      "label": "Phone number *"
+    },
+    {
+      "type": "group",
+      "input": "text",
+      "label": "Location *",
+      "groups": {
+        "Colombia": [
+          {
+            "value": "medellín",
+            "label": "Medellín"
+          },
+          {
+            "value": "barranquilla",
+            "label": "Barranquilla"
+          },
+          {
+            "value": "bogota",
+            "label": "Bogotá"
+          }
+        ],
+        "Canada": [
+          {
+            "value": "montreal",
+            "label": "Montreal"
+          },
+          {
+            "value": "torontp",
+            "label": "Toronto"
+          },
+          {
+            "value": "vancouver",
+            "label": "Vancouver"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "input": "text",
+      "label": "How many people do you need workspace? *"
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import ContactForm from "@/components/contactForm";
 import { Section } from "../elements";
 import { Container, ContainerForm, ImageForm } from "./elements";
 
-const Form = () => {
+const Form = ({ contactInfo }) => {
   return (
     <Section>
       <Container>
@@ -15,7 +15,7 @@ const Form = () => {
           height={100}
         />
         <ContainerForm>
-          <ContactForm />
+          <ContactForm contactInfo={contactInfo} />
         </ContainerForm>
       </Container>
     </Section>

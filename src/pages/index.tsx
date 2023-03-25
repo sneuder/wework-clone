@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import MainWrapper from "@/layouts/mainWrapper";
 import Navbar from "@/layouts/navbar";
 
@@ -16,10 +15,15 @@ import linksFooterInfo from "@/data/linksFooter.json";
 import socialProofInfo from "@/data/socialProof.json";
 import solutionsInfo from "@/data/solutions.json";
 import trendsInfo from "@/data/trends.json";
+import contactInfo from "@/data/contact.json";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home({ navbarInfo, socialProof, solutions, trends }) {
+export default function Home({
+  navbarInfo,
+  socialProof,
+  solutions,
+  trends,
+  contact,
+}) {
   return (
     <MainWrapper>
       <Navbar linkInfo={navbarInfo} />
@@ -27,7 +31,7 @@ export default function Home({ navbarInfo, socialProof, solutions, trends }) {
       <Solutions solutionsInfo={solutions} />
       <CTA />
       {/* <Sizes /> */}
-      <Form />
+      <Form contactInfo={contact} />
       <Network />
       <SocialProof socialInfo={socialProof} />
       <Trends trendsInfo={trends} />
@@ -43,6 +47,7 @@ export async function getStaticProps() {
       socialProof: socialProofInfo,
       solutions: solutionsInfo,
       trends: trendsInfo,
+      contact: contactInfo,
     },
   };
 }
