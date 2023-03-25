@@ -1,9 +1,9 @@
 import { TextField, FormControl, InputLabel, Select } from "@mui/material";
 
-import SecondHeader from "@/components/copies/headers/secondHeader/index";
-import { ParagraphElement } from "@/components/copies/paragraph/elements";
+import SecondHeader from "@/shared/copies/headers/secondHeader/index";
+import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 
-import Button from "@/shared/buttons/primary";
+import Button from "@/shared/button";
 
 import { Form, ContainerInputs, Policy } from "./elements";
 

@@ -1,6 +1,6 @@
 import { Section } from "../elements";
-import SecondHeader from "@/components/copies/headers/secondHeader/index";
-import { ParagraphElement } from "@/components/copies/paragraph/elements";
+import SecondHeader from "@/shared/copies/headers/secondHeader/index";
+import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
 import Direction from "@/components/direction/index";
 import Tag from "@/components/tag/index";

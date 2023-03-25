@@ -1,4 +1,4 @@
-import SecondHeader from "@/components/copies/headers/secondHeader/index";
+import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 import TextTag from "@/components/textTag/index";
 import Direction from "@/components/direction/index";
 import Separator from "@/components/separator/index";

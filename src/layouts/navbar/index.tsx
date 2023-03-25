@@ -6,7 +6,7 @@ import {
   Menu,
 } from "./elements";
 
-import SecondaryButton from "@/shared/buttons/secondary";
+import Button from "@/shared/button";
 import Branch from "@/shared/branch";
 
 const Navbar = ({ linkInfo }) => {
@@ -26,7 +26,10 @@ const Navbar = ({ linkInfo }) => {
         ))}
       </ContainerLinks>
       <ContainerCTA>
-        <SecondaryButton textButton={linkInfo.otherLinks.contact.text} />
+        <Button
+          textButton={linkInfo.otherLinks.contact.text}
+          buttonType={"secondary"}
+        />
         <LinkText
           href={"/"}
           showdesktop

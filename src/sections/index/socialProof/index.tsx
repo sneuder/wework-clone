@@ -3,9 +3,9 @@ import { Section } from "../elements";
 import { HorizontalContainer } from "./elements";
 import Direction from "@/components/direction/index";
 
-import SecondHeader from "@/components/copies/headers/secondHeader/index";
+import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 
-import Paragraph from "@/components/copies/paragraph";
+import Paragraph from "@/shared/copies/paragraph";
 
 const SocialProof = ({ socialInfo }) => {
   return (
