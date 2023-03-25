@@ -1,9 +1,11 @@
-import { Section } from "../elements";
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
-import { ParagraphElement } from "@/shared/copies/paragraph/elements";
-import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
+import ParagraphElement from "@/shared/copies/paragraph/index";
+
 import Direction from "@/components/direction/index";
 import Tag from "@/components/tag/index";
+
+import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
+import { Section } from "../elements";
 
 const CTA = () => {
   return (
@@ -22,7 +24,7 @@ const CTA = () => {
           <SecondHeader>
             Get 25% off WeWork All Access Plus plan with this special offer
           </SecondHeader>
-          <ParagraphElement secondary>
+          <ParagraphElement secondary={"true"}>
             Unlock workspace near you with 25% off WeWork All Access Plus
             monthly membership plan fees for 5 months. Terms apply.
           </ParagraphElement>

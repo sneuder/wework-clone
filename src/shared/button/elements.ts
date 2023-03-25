@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import StyledProps from "@/models/StyledProps";
 
-export const VariantButton = styled.button`
+export const VariantButton = styled.button<StyledProps>`
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;

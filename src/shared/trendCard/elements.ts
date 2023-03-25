@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import StyledProps from "@/models/StyledProps";
 
-export const ContainerCard = styled.div`
+export const ContainerCard = styled.div<StyledProps>`
   display: flex;
   gap: 40px;
   align-items: center;
@@ -22,7 +23,7 @@ export const ContentContainer = styled.div`
   gap: 10px;
 `;
 
-export const ImageCard = styled(Image)`
+export const ImageCard = styled(Image)<StyledProps>`
   border-radius: 0.25rem;
   width: 100%;
   height: auto;
@@ -30,6 +31,6 @@ export const ImageCard = styled(Image)`
   ${(props) => props.direction === "horizontal" && `width: 50%;`};
 `;
 
-export const Header = styled.h3`
+export const Header = styled.h3<StyledProps>`
   ${(props) => props.bighead && `font-size: 2rem`}
 `;

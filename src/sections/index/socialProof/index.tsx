@@ -1,18 +1,24 @@
 import CompanyCards from "@/components/companyCards";
-import { Section } from "../elements";
-import { HorizontalContainer } from "./elements";
 import Direction from "@/components/direction/index";
 
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
-
 import Paragraph from "@/shared/copies/paragraph";
 
-const SocialProof = ({ socialInfo }) => {
+import { Section } from "../elements";
+import { HorizontalContainer } from "./elements";
+
+import SocialProofInfo from "@/models/SocialProof";
+
+interface SocialProofProps {
+  socialInfo: SocialProofInfo;
+}
+
+const SocialProof = ({ socialInfo }: SocialProofProps) => {
   return (
     <Section>
       <SecondHeader>{socialInfo.header}</SecondHeader>
       <HorizontalContainer>
-        <Paragraph textParagraph={socialInfo.description} />
+        <Paragraph>{socialInfo.description}</Paragraph>
         <Direction href={"/"}>{socialInfo.direction}</Direction>
       </HorizontalContainer>
       <CompanyCards companies={socialInfo.companies}></CompanyCards>

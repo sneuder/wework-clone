@@ -1,8 +1,16 @@
-import { ParagraphElement } from "@/shared/copies/paragraph/elements";
-import { ContainerCard, Header, ImageCard, ContentContainer } from "./elements";
+import ParagraphElement from "@/shared/copies/paragraph/index";
 import TextTag from "@/shared/textTag/index";
 
-const TrendCard = ({ trend, selectedMode }) => {
+import { ContainerCard, Header, ImageCard, ContentContainer } from "./elements";
+import { Trend } from "@/models/Trends";
+import TrendCardOption from "@/models/TrendCardsOption";
+
+interface TrendCardsProps {
+  trend: Trend;
+  selectedMode: TrendCardOption;
+}
+
+const TrendCard = ({ trend, selectedMode }: TrendCardsProps) => {
   return (
     <ContainerCard
       key={trend.header}
@@ -16,9 +24,13 @@ const TrendCard = ({ trend, selectedMode }) => {
         direction={selectedMode.direction}
       />
       <ContentContainer>
-        <TextTag secondary>{trend.tag}</TextTag>
-        <Header bighead={selectedMode.bigHead}>{trend.header}</Header>
-        <ParagraphElement secondary>{trend.description}</ParagraphElement>
+        <TextTag secondary={"true"}>{trend.tag}</TextTag>
+        <Header bighead={selectedMode.bigHead.toString()}>
+          {trend.header}
+        </Header>
+        <ParagraphElement secondary={"true"}>
+          {trend.description}
+        </ParagraphElement>
       </ContentContainer>
     </ContainerCard>
   );

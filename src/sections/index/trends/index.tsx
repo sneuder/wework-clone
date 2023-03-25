@@ -1,17 +1,22 @@
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 import TextTag from "@/shared/textTag/index";
+import TrendCard from "@/shared/trendCard";
+
 import Direction from "@/components/direction/index";
 import Separator from "@/components/separator/index";
 import TrensCards from "@/components/trendsCards";
 
-import TrendCard from "@/shared/trendCard";
-
-import trendCardOptions from "@/styles/trendCardOptions";
-
 import { Section } from "../elements";
 import { HorizontalContainer } from "../elements";
 
-const Trends = ({ trendsInfo }) => {
+import trendCardOptions from "@/styles/trendCardOptions";
+import TrendsInfo from "@/models/Trends";
+
+interface TrendsProps {
+  trendsInfo: TrendsInfo;
+}
+
+const Trends = ({ trendsInfo }: TrendsProps) => {
   return (
     <Section>
       <TextTag></TextTag>

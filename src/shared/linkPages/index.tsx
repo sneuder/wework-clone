@@ -1,10 +1,15 @@
 import { ContainerPage, LinkPage, ContainerLinks } from "./elements";
 import TextTag from "@/shared/textTag";
+import { LinkPages } from "@/models/LinksFooter";
 
-const LinkPages = ({ pages }) => {
+interface LinkPagesProps {
+  pages: LinkPages;
+}
+
+const LinkPages = ({ pages }: LinkPagesProps) => {
   return (
     <ContainerPage>
-      <TextTag headerlink>{pages.header}</TextTag>
+      <TextTag headerLink={"true"}>{pages.header}</TextTag>
       <ContainerLinks>
         {pages.links.map((pageLink) => (
           <LinkPage

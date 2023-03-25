@@ -7,7 +7,7 @@ export interface Solution {
 interface Solutions {
   header: string;
   direction: string;
-  solutions: Companies[];
+  solutions: Solution[];
 }
 
 export default Solutions;

@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
+import StyledProps from "@/models/StyledProps";
 
-const TextTag = styled.p`
+const TextTag = styled.p<StyledProps>`
   text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 10px;
 
   ${(props) =>
-    props.secondary &&
+    props.secondary === "true" &&
     `
     &::after {
       content: '';
@@ -23,7 +24,7 @@ const TextTag = styled.p`
   `}
 
   ${(props) =>
-    props.headerlink &&
+    props.headerlink === "true" &&
     `
 
     font-family: "Apercu Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
