@@ -9,7 +9,7 @@ import { Form } from "./elements";
 const WorkSpaceForm = () => {
   return (
     <Form>
-      <FirstHeader>For all the ways you work, we're here</FirstHeader>
+      <FirstHeader>For all the ways you work, we&apos;re here</FirstHeader>
       <ParagraphElement secondary={"true"}>
         Find a location near you. Explore memberships and move-in ready offices
         for individuals or companies of all sizes.
