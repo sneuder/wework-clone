@@ -4,12 +4,14 @@ import Image from "next/image";
 export const ContainerCard = styled.div`
   display: flex;
   gap: 40px;
+  align-items: center;
 
   ${(props) =>
     props.direction === "vertical" &&
     `
     gap: 10px;
     flex-direction: column;
+    align-items: flex-start;
     `}
 `;
 
@@ -25,6 +27,8 @@ export const ImageCard = styled(Image)`
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+
+  ${(props) => props.direction === "horizontal" && `width: 50%;`};
 `;
 
 export const Header = styled.h3`

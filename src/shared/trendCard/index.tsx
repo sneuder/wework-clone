@@ -13,6 +13,7 @@ const TrendCard = ({ trend, selectedMode }) => {
         alt={trend.description}
         width={500}
         height={500}
+        direction={selectedMode.direction}
       />
       <ContentContainer>
         <TextTag></TextTag>
