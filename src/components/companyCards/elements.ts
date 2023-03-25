@@ -14,6 +14,11 @@ export const GeneralContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Container = styled.div`
@@ -24,6 +29,10 @@ export const Container = styled.div`
   position: relative;
   padding: 24px 32px;
   background-color: #f7f7f7;
+
+  @media (max-width: 1195px) {
+    height: 150px;
+  }
 `;
 
 export const ImageCompany = styled(Image)`

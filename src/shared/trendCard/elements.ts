@@ -7,6 +7,10 @@ export const ContainerCard = styled.div<StyledProps>`
   gap: 40px;
   align-items: center;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
   ${(props) =>
     props.direction === "vertical" &&
     `
@@ -28,7 +32,15 @@ export const ImageCard = styled(Image)<StyledProps>`
   width: 100%;
   height: auto;
 
-  ${(props) => props.direction === "horizontal" && `width: 50%;`};
+  ${(props) =>
+    props.direction === "horizontal" &&
+    `
+  width: 50%;
+  
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  `};
 `;
 
 export const Header = styled.h3<StyledProps>`

@@ -29,6 +29,11 @@ export const Container = styled.footer`
 
     row-gap: 40px;
   }
+
+  @media (max-width: 500px) {
+    row-gap: 20px;
+    column-gap: 20px;
+  }
 `;
 
 export const ContainerPages = styled.div<StyledProps>`
@@ -52,6 +57,10 @@ export const ContainerLanguage = styled.div`
   @media (max-width: 1195px) {
     width: 200px;
     justify-self: start;
+  }
+
+  @media (max-width: 500px) {
+    width: auto;
   }
 `;
 
