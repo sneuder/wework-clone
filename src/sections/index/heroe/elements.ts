@@ -1,13 +1,15 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import StyledProps from "@/models/StyledProps";
 
-export const Section = styled.main`
+export const Section = styled.main<StyledProps>`
   position: relative;
   padding: 0px 60px;
   display: flex;
   align-items: center;
   gap: 30px;
-  background-color: ${(props) => (props.secondary ? "#f7f7f7" : "transparent")};
+  background-color: ${(props) =>
+    props.secondary === "true" ? "#f7f7f7" : "transparent"};
   height: 100vh;
 
   @media (max-width: 1195px) {
