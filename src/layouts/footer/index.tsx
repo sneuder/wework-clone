@@ -12,9 +12,15 @@ import LinkPages from "@/shared/linkPages";
 import InputSelect from "@/shared/inputs/select";
 import SocialNetwork from "@/shared/socialNetwork";
 import Logo from "@/shared/logo";
-import { ParagraphElement } from "@/shared/copies/paragraph/elements";
+import ParagraphElement from "@/shared/copies/paragraph/index";
 
-const Footer = ({ footerInfo }) => {
+import LinksFooter from "@/models/LinksFooter";
+
+interface FooterProps {
+  footerInfo: LinksFooter;
+}
+
+const Footer = ({ footerInfo }: FooterProps) => {
   return (
     <Container>
       {Object.values(footerInfo.linkPages).map((linkPage, index) => (
@@ -32,27 +38,27 @@ const Footer = ({ footerInfo }) => {
         <InputSelect input={""} />
       </ContainerLanguage>
       <ContainerInfo>
-        <Info number>+5715087567</Info>
+        <Info number={"true"}>+5715087567</Info>
         {footerInfo.info.map((info) => (
           <Info key={info}>{info}</Info>
         ))}
       </ContainerInfo>
       <ContainerSettings>
-        <ContainerSettings setting>
+        <ContainerSettings setting={"true"}>
           {footerInfo.settings.map((info) => (
             <Info
               key={info}
-              settings
-              number
+              setting={"true"}
+              number={"true"}
             >
               {info}
             </Info>
           ))}
         </ContainerSettings>
-        <ContainerSettings setting>
+        <ContainerSettings setting={"true"}>
           <ParagraphElement
-            secondary
-            gray
+            secondary={"true"}
+            gray={"true"}
           >
             {footerInfo.copyright}
           </ParagraphElement>

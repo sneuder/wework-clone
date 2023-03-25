@@ -1,6 +1,11 @@
 import { FormControl, InputLabel, Select } from "@mui/material";
+import { InputGroup, Input } from "@/models/Contact";
 
-const InputGroup = ({ input }) => {
+interface InputGroupProps {
+  input: InputGroup;
+}
+
+const InputGroup = ({ input }: InputGroupProps) => {
   return (
     <FormControl fullWidth>
       <InputLabel htmlFor="grouped-native-select">{input.label}</InputLabel>
@@ -15,7 +20,7 @@ const InputGroup = ({ input }) => {
           aria-label="None"
           value=""
         />
-        {Object.keys(input.groups).map((groupKey) => (
+        {Object.keys(input.groups).map((groupKey: string) => (
           <optgroup
             label={groupKey}
             key={groupKey}

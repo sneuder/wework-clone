@@ -12,7 +12,7 @@ interface LinksFooter {
   copyright: string;
   info: string[];
   settings: string[];
-  linksPages: Record<Links, LinkPages>;
+  linkPages: Record<Links, LinkPages>;
 }
 
 export default LinksFooter;

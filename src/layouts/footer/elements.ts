@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import StyledProps from "@/models/StyledProps";
 
 export const Container = styled.footer`
   padding: 60px 60px;
@@ -30,7 +31,7 @@ export const Container = styled.footer`
   }
 `;
 
-export const ContainerPages = styled.div`
+export const ContainerPages = styled.div<StyledProps>`
   grid-area: ${(props) => props.page};
 `;
 
@@ -63,17 +64,17 @@ export const ContainerInfo = styled.address`
   gap: 10px;
 `;
 
-export const Info = styled.p`
+export const Info = styled.p<StyledProps>`
   font-family: "Apercu Mono", SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace !important;
   font-size: 0.875rem;
   font-weight: 400;
 
-  ${(props) => props.number && `color: #0000ff`};
-  ${(props) => props.settings && `font-family: "Apercu"`};
+  ${(props) => props.number === "true" && `color: #0000ff`};
+  ${(props) => props.setting === "true" && `font-family: "Apercu"`};
 `;
 
-export const ContainerSettings = styled.div`
+export const ContainerSettings = styled.div<StyledProps>`
   grid-area: settings;
   justify-self: end;
 

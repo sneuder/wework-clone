@@ -1,7 +1,12 @@
 import { VariantButton } from "./elements";
 
-const SecondaryButton = ({ textButton, buttonType }) => {
+interface ButtonProps {
+  textButton: string;
+  buttonType?: string;
+}
+
+const Button = ({ textButton, buttonType }: ButtonProps) => {
   return <VariantButton buttonType={buttonType}>{textButton}</VariantButton>;
 };
 
-export default SecondaryButton;
+export default Button;
