@@ -6,7 +6,7 @@ import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 
 import Direction from "@/components/direction/index";
-import TextTag from "@/components/textTag/index";
+import TextTag from "@/shared/textTag/index";
 
 const Network = () => {
   return (

@@ -1,5 +1,5 @@
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
-import TextTag from "@/components/textTag/index";
+import TextTag from "@/shared/textTag/index";
 import Direction from "@/components/direction/index";
 import Separator from "@/components/separator/index";
 import TrensCards from "@/components/trendsCards";

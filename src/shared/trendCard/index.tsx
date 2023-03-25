@@ -1,6 +1,6 @@
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 import { ContainerCard, Header, ImageCard, ContentContainer } from "./elements";
-import TextTag from "@/components/textTag/index";
+import TextTag from "@/shared/textTag/index";
 
 const TrendCard = ({ trend, selectedMode }) => {
   return (

@@ -1,1 +1,82 @@
-{}
+{
+  "linkPages": {
+    "company": {
+      "header": "company",
+      "links": [
+        {
+          "text": "Global Location"
+        },
+        {
+          "text": "Mission"
+        },
+        {
+          "text": "Inclusion & Diversity"
+        },
+        {
+          "text": "Carrers"
+        },
+        {
+          "text": "Investors"
+        },
+        {
+          "text": "Newsroom"
+        },
+        {
+          "text": "Blog"
+        }
+      ]
+    },
+    "partnership": {
+      "header": "partnership",
+      "links": [
+        {
+          "text": "Global Location"
+        },
+        {
+          "text": "Mission"
+        },
+        {
+          "text": "Inclusion & Diversity"
+        },
+        {
+          "text": "Carrers"
+        },
+        {
+          "text": "Investors"
+        },
+        {
+          "text": "Newsroom"
+        },
+        {
+          "text": "Blog"
+        }
+      ]
+    },
+    "support": {
+      "header": "support",
+      "links": [
+        {
+          "text": "Global Location"
+        },
+        {
+          "text": "Mission"
+        },
+        {
+          "text": "Inclusion & Diversity"
+        },
+        {
+          "text": "Carrers"
+        },
+        {
+          "text": "Investors"
+        },
+        {
+          "text": "Newsroom"
+        },
+        {
+          "text": "Blog"
+        }
+      ]
+    }
+  }
+}

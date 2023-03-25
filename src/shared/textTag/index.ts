@@ -21,6 +21,17 @@ const TextTag = styled.p`
     font-size: 0.75rem;
     line-height: 1.125rem;
   `}
+
+  ${(props) =>
+    props.headerlink &&
+    `
+
+    font-family: "Apercu Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #666;
+  `}
 `;
 
 export default TextTag;

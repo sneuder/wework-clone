@@ -16,7 +16,13 @@ import solutionsInfo from "@/data/solutions.json";
 import trendsInfo from "@/data/trends.json";
 import contactInfo from "@/data/contact.json";
 
-export default function Home({ socialProof, solutions, trends, contact }) {
+export default function Home({
+  socialProof,
+  solutions,
+  trends,
+  contact,
+  footerInfo,
+}) {
   return (
     <>
       <MainWrapper>
@@ -28,7 +34,7 @@ export default function Home({ socialProof, solutions, trends, contact }) {
         <Network />
         <SocialProof socialInfo={socialProof} />
         <Trends trendsInfo={trends} />
-        <Footer />
+        <Footer footerInfo={footerInfo} />
       </MainWrapper>
     </>
   );
