@@ -23,7 +23,7 @@ export default function Home({ navbarInfo, socialProof, solutions, trends }) {
   return (
     <MainWrapper>
       <Navbar linkInfo={navbarInfo} />
-      {/* <Heroe /> */}
+      <Heroe />
       <Solutions solutionsInfo={solutions} />
       <CTA />
       {/* <Sizes /> */}

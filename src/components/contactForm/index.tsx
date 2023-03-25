@@ -1,10 +1,11 @@
-import { Form, ContainerInputs, Policy } from "./elements";
-import { SecondHeader } from "@/components/copies/headers/secondaryHeader/elements";
-import { ParagraphElement } from "@/components/copies/paragraph/elements";
 import { TextField, FormControl, InputLabel, Select } from "@mui/material";
-import SecondaryHeader from "@/components/copies/headers/secondaryHeader";
-import Paragraph from "@/components/copies/paragraph";
+
+import SecondHeader from "@/components/copies/headers/secondHeader/index";
+import { ParagraphElement } from "@/components/copies/paragraph/elements";
+
 import Button from "@/shared/buttons/primary";
+
+import { Form, ContainerInputs, Policy } from "./elements";
 
 const ContactForm = () => {
   return (
