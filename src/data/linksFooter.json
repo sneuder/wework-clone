@@ -1,4 +1,8 @@
 {
+  "number": "+5715087567",
+  "copyright": "Copyright © 2023 WeWork. All rights reserved.",
+  "info": ["WeWork Companies LLC",  "75 Rockefeller Plaza", "Floor 10", "New York, New York 10019"],
+  "settings": ["Privacy",  "Terms", "Cookies Policy", "Cookies Settings", "Accessibility", "Sitemap"],
   "linkPages": {
     "company": {
       "header": "company",
@@ -30,25 +34,16 @@
       "header": "partnership",
       "links": [
         {
-          "text": "Global Location"
+          "text": "Brokers"
         },
         {
-          "text": "Mission"
+          "text": "Landlords"
         },
         {
-          "text": "Inclusion & Diversity"
+          "text": "Refer a Friend"
         },
         {
-          "text": "Carrers"
-        },
-        {
-          "text": "Investors"
-        },
-        {
-          "text": "Newsroom"
-        },
-        {
-          "text": "Blog"
+          "text": "Event Planners"
         }
       ]
     },
@@ -56,25 +51,16 @@
       "header": "support",
       "links": [
         {
-          "text": "Global Location"
+          "text": "Contact Us"
         },
         {
-          "text": "Mission"
+          "text": "Member Login"
         },
         {
-          "text": "Inclusion & Diversity"
+          "text": "Help Center"
         },
         {
-          "text": "Carrers"
-        },
-        {
-          "text": "Investors"
-        },
-        {
-          "text": "Newsroom"
-        },
-        {
-          "text": "Blog"
+          "text": "COVID Response"
         }
       ]
     }

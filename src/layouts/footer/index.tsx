@@ -11,6 +11,8 @@ import {
 import LinkPages from "@/shared/linkPages";
 import InputSelect from "@/shared/inputs/select";
 import SocialNetwork from "@/shared/socialNetwork";
+import Logo from "@/shared/logo";
+import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 
 const Footer = ({ footerInfo }) => {
   return (
@@ -31,12 +33,32 @@ const Footer = ({ footerInfo }) => {
       </ContainerLanguage>
       <ContainerInfo>
         <Info number>+5715087567</Info>
-        <Info>WeWork Companies LLC</Info>
-        <Info>75 Rockefeller Plaza</Info>
-        <Info>Floor 10</Info>
-        <Info>New York, New York 10019</Info>
+        {footerInfo.info.map((info) => (
+          <Info key={info}>{info}</Info>
+        ))}
       </ContainerInfo>
-      <ContainerSettings></ContainerSettings>
+      <ContainerSettings>
+        <ContainerSettings setting>
+          {footerInfo.settings.map((info) => (
+            <Info
+              key={info}
+              settings
+              number
+            >
+              {info}
+            </Info>
+          ))}
+        </ContainerSettings>
+        <ContainerSettings setting>
+          <ParagraphElement
+            secondary
+            gray
+          >
+            {footerInfo.copyright}
+          </ParagraphElement>
+        </ContainerSettings>
+        <Logo />
+      </ContainerSettings>
     </Container>
   );
 };

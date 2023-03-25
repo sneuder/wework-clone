@@ -8,6 +8,7 @@ export const ParagraphElement = styled.p`
   }};
 
   line-height: ${(props) => (props.secondary == true ? "1.75rem" : "2rem")};
+  color: ${(props) => (props.gray == true ? "#666" : "#000")};
 
   font-weight: 400;
 `;

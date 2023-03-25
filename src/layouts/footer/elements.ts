@@ -13,7 +13,7 @@ export const Container = styled.footer`
   grid-template-areas:
     "page-1 page-2 page-3 network"
     "page-1 page-2 page-3 language"
-    "info settings settings logo";
+    "info info settings settings";
 
   @media (max-width: 1195px) {
     padding: 40px 40px;
@@ -24,7 +24,7 @@ export const Container = styled.footer`
       "page-1 page-2"
       "page-3 language"
       "info info"
-      "settings logo";
+      "settings settings";
 
     row-gap: 40px;
   }
@@ -69,9 +69,31 @@ export const Info = styled.p`
   font-size: 0.875rem;
   font-weight: 400;
 
-  ${(props) => props.number && `color: #0000ff`}
+  ${(props) => props.number && `color: #0000ff`};
+  ${(props) => props.settings && `font-family: "Apercu"`};
 `;
 
 export const ContainerSettings = styled.div`
   grid-area: settings;
+  justify-self: end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 20px;
+
+  ${(props) =>
+    props.setting &&
+    `
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+  `}
+
+  @media (max-width: 1195px) {
+    justify-self: start;
+    align-items: flex-start;
+  }
 `;
