@@ -35,7 +35,7 @@ const Footer = ({ footerInfo }: FooterProps) => {
         <SocialNetwork />
       </ContainerNetWork>
       <ContainerLanguage>
-        <InputSelect input={""} />
+        <InputSelect />
       </ContainerLanguage>
       <ContainerInfo>
         <Info number={"true"}>+5715087567</Info>
