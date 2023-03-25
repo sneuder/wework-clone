@@ -12,6 +12,9 @@ export const Section = styled.main`
 
   @media (max-width: 1195px) {
     padding: 0px 40px;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
   }
 `;
 
@@ -22,4 +25,12 @@ export const HeroeImage = styled(Image)`
   width: 80%;
   height: auto;
   border-radius: 0.25rem;
+
+  @media (max-width: 1195px) {
+    width: 90%;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+  }
 `;

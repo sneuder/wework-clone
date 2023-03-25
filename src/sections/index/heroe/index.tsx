@@ -1,6 +1,7 @@
+import WorkSpaceForm from "@/components/workSpaceForm";
+
 import { Section } from "./elements";
 import { HeroeImage } from "./elements";
-import WorkSpaceForm from "@/components/workSpaceForm";
 
 const Heroe = () => {
   return (

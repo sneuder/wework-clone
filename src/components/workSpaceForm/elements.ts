@@ -8,4 +8,8 @@ export const Form = styled.form`
   padding: 1.5rem;
   border-radius: 0.25rem;
   width: 35%;
+
+  @media (max-width: 1195px) {
+    width: 90%;
+  }
 `;
