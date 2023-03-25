@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import StyledProps from "@/models/StyledProps";
 
 export const Container = styled.nav`
   background: #fff;
@@ -33,7 +34,7 @@ export const ContainerCTA = styled.div`
   gap: 40px;
 `;
 
-export const LinkText = styled(Link)`
+export const LinkText = styled(Link)<StyledProps>`
   &:active {
     color: #000;
   }
@@ -43,7 +44,7 @@ export const LinkText = styled(Link)`
   }
 
   @media (max-width: 1195px) {
-    display: ${(props) => (props.showdesktop ? "none" : "block")};
+    display: ${(props) => (props.showdesktop === "true" ? "none" : "block")};
   }
 `;
 

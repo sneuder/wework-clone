@@ -9,6 +9,7 @@ interface StyledProps {
   page?: string;
   number?: string;
   setting?: string;
+  showdesktop?: string;
 }
 
 export default StyledProps;

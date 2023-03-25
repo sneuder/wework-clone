@@ -22,7 +22,12 @@ const ContactForm = ({ contactInfo }: ContactFormProps) => {
       <ContainerInputs>
         {contactInfo.inputs.map((input) => {
           if (input.type === "group")
-            return <InputGroup input={input as InputGroupInfo} />;
+            return (
+              <InputGroup
+                key={input.label}
+                input={input as InputGroupInfo}
+              />
+            );
           return (
             <InputText
               key={input.label}

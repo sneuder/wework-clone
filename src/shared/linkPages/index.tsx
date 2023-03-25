@@ -9,7 +9,7 @@ interface LinkPagesProps {
 const LinkPages = ({ pages }: LinkPagesProps) => {
   return (
     <ContainerPage>
-      <TextTag headerLink={"true"}>{pages.header}</TextTag>
+      <TextTag headerlink={"true"}>{pages.header}</TextTag>
       <ContainerLinks>
         {pages.links.map((pageLink) => (
           <LinkPage

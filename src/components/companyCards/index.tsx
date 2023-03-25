@@ -12,7 +12,7 @@ const CompanyCards = ({ companies }: CompanyCardsProps) => {
         <Container key={company.urlImage}>
           <ImageCompany
             src={company.urlImage}
-            alt={"any"}
+            alt={"company"}
             width={100}
             height={50}
           />

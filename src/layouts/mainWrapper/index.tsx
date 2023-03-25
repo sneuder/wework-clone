@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-css-tags */
 import Head from "next/head";
 
 import linksNavbarInfo from "@/data/linksNavbar.json";
@@ -25,26 +24,6 @@ const MainWrapper = ({ children }: any) => {
         <link
           rel="icon"
           href="/favicon.ico"
-        />
-        <link
-          rel="preload"
-          href="//www-static.wework.com/apercu/apercu.css"
-          as="style"
-        />
-
-        <link
-          rel="stylesheet"
-          href="//www-static.wework.com/apercu/apercu.css"
-        />
-
-        <link
-          rel="stylesheet"
-          href="//www-static.wework.com/apercu/apercu_mono.css"
-        />
-
-        <link
-          rel="stylesheet"
-          href="/vanilla-assets/stylesheets/vendor.bc11321946874dd2d91a972acd538f05.css"
         />
       </Head>
       <Cintillo />

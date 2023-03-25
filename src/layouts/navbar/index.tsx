@@ -9,7 +9,13 @@ import {
 import Button from "@/shared/button";
 import Branch from "@/shared/branch";
 
-const Navbar = ({ linkInfo }) => {
+import LinksNavbar from "@/models/LinksNavbar";
+
+interface NavbarProps {
+  linkInfo: LinksNavbar;
+}
+
+const Navbar = ({ linkInfo }: NavbarProps) => {
   return (
     <Container>
       <ContainerLinks>
@@ -19,7 +25,7 @@ const Navbar = ({ linkInfo }) => {
           <LinkText
             key={text}
             href={"/"}
-            showdesktop
+            showdesktop={"true"}
           >
             {text}
           </LinkText>
@@ -32,7 +38,7 @@ const Navbar = ({ linkInfo }) => {
         />
         <LinkText
           href={"/"}
-          showdesktop
+          showdesktop={"true"}
         >
           {linkInfo.otherLinks.login.text}
         </LinkText>

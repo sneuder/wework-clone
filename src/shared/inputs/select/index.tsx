@@ -1,17 +1,16 @@
 import { Select, FormControl, MenuItem, InputLabel } from "@mui/material";
 
-const InputSelect = ({ input }) => {
+const InputSelect = () => {
   return (
     <FormControl fullWidth>
-      <InputLabel id="demo-simple-select-label">Age</InputLabel>
+      <InputLabel>Language</InputLabel>
       <Select
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
-        label="Age"
+        label="Language"
+        value={20}
       >
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        <MenuItem value={20}>English</MenuItem>
+        <MenuItem value={10}>Spanish</MenuItem>
+        <MenuItem value={30}>French</MenuItem>
       </Select>
     </FormControl>
   );
