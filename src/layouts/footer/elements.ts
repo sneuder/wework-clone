@@ -6,8 +6,8 @@ export const Container = styled.footer`
 
   display: grid;
   grid-template-columns: auto auto auto 1fr;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 10px;
+  grid-template-rows: 40px;
+  row-gap: 40px;
   column-gap: 80px;
 
   grid-template-areas:
@@ -18,7 +18,6 @@ export const Container = styled.footer`
   @media (max-width: 1195px) {
     padding: 40px 40px;
     grid-template-columns: auto auto;
-    grid-template-rows: repeat(5, auto);
 
     grid-template-areas:
       "network newtwork"
@@ -55,8 +54,22 @@ export const ContainerLanguage = styled.div`
   }
 `;
 
-export const ContainerInfo = styled.div`
+export const ContainerInfo = styled.address`
   grid-area: info;
+  font-style: normal;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+`;
+
+export const Info = styled.p`
+  font-family: "Apercu Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  ${(props) => props.number && `color: #0000ff`}
 `;
 
 export const ContainerSettings = styled.div`

@@ -5,6 +5,7 @@ import {
   ContainerInfo,
   ContainerSettings,
   ContainerLanguage,
+  Info,
 } from "./elements";
 
 import LinkPages from "@/shared/linkPages";
@@ -28,7 +29,13 @@ const Footer = ({ footerInfo }) => {
       <ContainerLanguage>
         <InputSelect input={""} />
       </ContainerLanguage>
-      <ContainerInfo></ContainerInfo>
+      <ContainerInfo>
+        <Info number>+5715087567</Info>
+        <Info>WeWork Companies LLC</Info>
+        <Info>75 Rockefeller Plaza</Info>
+        <Info>Floor 10</Info>
+        <Info>New York, New York 10019</Info>
+      </ContainerInfo>
       <ContainerSettings></ContainerSettings>
     </Container>
   );
