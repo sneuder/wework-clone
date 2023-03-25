@@ -1,4 +1,4 @@
-import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
+import { SecondHeader } from "@/components/copies/headers/secondaryHeader/elements";
 import TextTag from "@/components/textTag/index";
 
 import { Section } from "../elements";
@@ -8,6 +8,7 @@ import TrensCards from "@/components/trendsCards";
 import TrendCard from "@/shared/trendCard";
 
 import trendCardOptions from "@/styles/trendCardOptions";
+import Separator from "@/components/separator/index";
 
 const Trends = ({ trendsInfo }) => {
   return (
@@ -21,6 +22,7 @@ const Trends = ({ trendsInfo }) => {
         trend={trendsInfo.mainTrend}
         selectedMode={trendCardOptions.horizontal}
       />
+      <Separator />
       <TrensCards trends={trendsInfo.trends} />
     </Section>
   );

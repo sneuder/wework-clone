@@ -1,6 +1,9 @@
+/* eslint-disable @next/next/no-css-tags */
 import Head from "next/head";
+import { Inter } from "next/font/google";
 import { Container } from "./elements";
-import WhatsappButton from "@/components/whatsappButton";
+
+const inter = Inter({ subsets: ["latin"] });
 
 const MainWrapper = ({ children }: any) => {
   return (
@@ -40,10 +43,7 @@ const MainWrapper = ({ children }: any) => {
           href="/vanilla-assets/stylesheets/vendor.bc11321946874dd2d91a972acd538f05.css"
         />
       </Head>
-      <Container>
-        <WhatsappButton />
-        {children}
-      </Container>
+      <Container>{children}</Container>
     </>
   );
 };

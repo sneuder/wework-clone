@@ -26,7 +26,6 @@ export const ImageCard = styled(Image)`
   border-radius: 0.25rem;
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
 
   ${(props) => props.direction === "horizontal" && `width: 50%;`};
 `;

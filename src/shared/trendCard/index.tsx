@@ -1,4 +1,4 @@
-import { ParagraphElement } from "@/shared/copies/paragraph/elements";
+import { ParagraphElement } from "@/components/copies/paragraph/elements";
 import { ContainerCard, Header, ImageCard, ContentContainer } from "./elements";
 import TextTag from "@/components/textTag/index";
 

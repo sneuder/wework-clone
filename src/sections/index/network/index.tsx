@@ -1,8 +1,8 @@
 import { Section } from "../elements";
 import { HorizontalContainer, LeftSide, ImageNet } from "./elements";
 
-import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
-import { ParagraphElement } from "@/shared/copies/paragraph/elements";
+import { SecondHeader } from "@/components/copies/headers/secondaryHeader/elements";
+import { ParagraphElement } from "@/components/copies/paragraph/elements";
 
 import Direction from "@/components/direction/index";
 import TextTag from "@/components/textTag/index";

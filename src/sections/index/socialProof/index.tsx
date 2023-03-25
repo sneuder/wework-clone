@@ -2,8 +2,8 @@ import CompanyCards from "@/components/companyCards";
 import { Section } from "../elements";
 import { HorizontalContainer } from "./elements";
 import Direction from "@/components/direction/index";
-import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
-import Paragraph from "@/shared/copies/paragraph";
+import SecondaryHeader from "@/components/copies/headers/secondaryHeader";
+import Paragraph from "@/components/copies/paragraph";
 
 const SocialProof = ({ socialInfo }) => {
   return (
