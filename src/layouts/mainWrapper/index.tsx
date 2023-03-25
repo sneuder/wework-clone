@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-css-tags */
 import Head from "next/head";
 
+import linksNavbarInfo from "@/data/linksNavbar.json";
+
+import Cintillo from "@/layouts/cintillo";
+import Navbar from "@/layouts/navbar";
 import WhatsappButton from "@/components/whatsappButton";
 
 import { Container } from "./elements";
@@ -43,10 +47,10 @@ const MainWrapper = ({ children }: any) => {
           href="/vanilla-assets/stylesheets/vendor.bc11321946874dd2d91a972acd538f05.css"
         />
       </Head>
-      <Container>
-        <WhatsappButton />
-        {children}
-      </Container>
+      <Cintillo />
+      <Navbar linkInfo={linksNavbarInfo} />
+      <WhatsappButton />
+      <Container>{children}</Container>
     </>
   );
 };

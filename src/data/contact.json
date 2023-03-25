@@ -58,7 +58,7 @@
     {
       "type": "text",
       "input": "text",
-      "label": "How many people do you need workspace? *"
+      "label": "How many people need workspace? *"
     }
   ]
 }

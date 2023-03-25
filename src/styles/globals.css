@@ -7,7 +7,6 @@
 }
 
 body {
-  padding-top: 80px;
   font-family: "Apercu", Avenir, -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", Helvetica, "Calibri", "Roboto", Arial, sans-serif;
 }
@@ -26,4 +25,20 @@ input,
 label {
   font-family: "Apercu Mono", SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0000ff;
+  border-radius: 3px;
 }
