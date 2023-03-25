@@ -1,8 +1,7 @@
-import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
 import { Section } from "../elements";
 import { HorizontalContainer } from "../elements";
 import SolutionsCards from "@/components/solutionsCards";
-import Direction from "@/components/direction";
+import Direction from "@/components/direction/index";
 import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
 
 const Solutions = ({ solutionsInfo }) => {
@@ -10,7 +9,7 @@ const Solutions = ({ solutionsInfo }) => {
     <Section>
       <HorizontalContainer>
         <SecondHeader secondary>{solutionsInfo.header}</SecondHeader>
-        <Direction />
+        <Direction href={"/"}>{solutionsInfo.direction}</Direction>
       </HorizontalContainer>
       <SolutionsCards solutions={solutionsInfo.solutions} />
     </Section>

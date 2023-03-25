@@ -2,7 +2,7 @@ import { Section } from "../elements";
 import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
-import Direction from "@/components/direction";
+import Direction from "@/components/direction/index";
 import Tag from "@/components/tag";
 
 const CTA = () => {
@@ -26,7 +26,7 @@ const CTA = () => {
             Unlock workspace near you with 25% off WeWork All Access Plus
             monthly membership plan fees for 5 months. Terms apply.
           </ParagraphElement>
-          <Direction>Learn more</Direction>
+          <Direction href={"/"}>Learn more</Direction>
         </RightSide>
       </HorizontalContainer>
     </Section>

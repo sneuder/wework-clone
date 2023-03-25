@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 export const GeneralContainer = styled.div`
   display: flex;
@@ -23,4 +24,8 @@ export const Container = styled.div`
   position: relative;
   padding: 24px 32px;
   background-color: #f7f7f7;
+`;
+
+export const ImageCompany = styled(Image)`
+  height: auto;
 `;

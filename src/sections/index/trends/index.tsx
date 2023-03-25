@@ -1,8 +1,9 @@
 import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
-import TextTag from "@/components/textTag";
+import TextTag from "@/components/textTag/index";
+
 import { Section } from "../elements";
 import { HorizontalContainer } from "../elements";
-import Direction from "@/components/direction";
+import Direction from "@/components/direction/index";
 import TrensCards from "@/components/trendsCards";
 import TrendCard from "@/shared/trendCard";
 
@@ -14,7 +15,7 @@ const Trends = ({ trendsInfo }) => {
       <TextTag></TextTag>
       <HorizontalContainer>
         <SecondHeader>{trendsInfo.header}</SecondHeader>
-        <Direction>Read On</Direction>
+        <Direction href={"/"}>{trendsInfo.direction}</Direction>
       </HorizontalContainer>
       <TrendCard
         trend={trendsInfo.mainTrend}

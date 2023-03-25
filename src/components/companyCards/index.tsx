@@ -1,17 +1,15 @@
-import { GeneralContainer, Container } from "./elements";
-import Image from "next/image";
+import { GeneralContainer, Container, ImageCompany } from "./elements";
 
 const CompanyCards = ({ companies }) => {
   return (
     <GeneralContainer>
       {companies.map((company) => (
         <Container key={company.urlImage}>
-          <Image
+          <ImageCompany
             src={company.urlImage}
             alt={"any"}
             width={100}
             height={50}
-            style={{ height: "auto" }}
           />
         </Container>
       ))}

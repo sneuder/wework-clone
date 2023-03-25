@@ -1,7 +1,7 @@
 import CompanyCards from "@/components/companyCards";
 import { Section } from "../elements";
 import { HorizontalContainer } from "./elements";
-import Direction from "@/components/direction";
+import Direction from "@/components/direction/index";
 import SecondaryHeader from "@/shared/copies/headers/secondaryHeader";
 import Paragraph from "@/shared/copies/paragraph";
 
@@ -11,7 +11,7 @@ const SocialProof = ({ socialInfo }) => {
       <SecondaryHeader textHeader={socialInfo.header} />
       <HorizontalContainer>
         <Paragraph textParagraph={socialInfo.description} />
-        <Direction />
+        <Direction href={"/"}>{socialInfo.direction}</Direction>
       </HorizontalContainer>
       <CompanyCards companies={socialInfo.companies}></CompanyCards>
     </Section>

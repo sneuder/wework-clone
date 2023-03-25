@@ -4,24 +4,22 @@ import { HorizontalContainer, LeftSide, ImageNet } from "./elements";
 import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 
-import Direction from "@/components/direction";
-import TextTag from "@/components/textTag";
-
-import Image from "next/image";
+import Direction from "@/components/direction/index";
+import TextTag from "@/components/textTag/index";
 
 const Network = () => {
   return (
     <Section secondary>
       <HorizontalContainer>
         <LeftSide>
-          <TextTag />
+          <TextTag>Global NetWork</TextTag>
           <SecondHeader>Workspace where and when you need it</SecondHeader>
           <ParagraphElement secondary>
             With over 700 global locations, teams can do their best work in more
             places, whether it’s being productive closer to home, having access
             to multiple workspaces, or collaborating at a central office.
           </ParagraphElement>
-          <Direction>Explore Locations</Direction>
+          <Direction href={"/"}>Explore Locations</Direction>
         </LeftSide>
         <ImageNet
           src={
