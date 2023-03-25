@@ -3,7 +3,7 @@ import { SecondHeader } from "@/shared/copies/headers/secondaryHeader/elements";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 import { ImageCTA, RightSide, HorizontalContainer } from "./elements";
 import Direction from "@/components/direction/index";
-import Tag from "@/components/tag";
+import Tag from "@/components/tag/index";
 
 const CTA = () => {
   return (
@@ -18,7 +18,7 @@ const CTA = () => {
           height={0}
         />
         <RightSide>
-          <Tag />
+          <Tag>Introductory Pricing</Tag>
           <SecondHeader>
             Get 25% off WeWork All Access Plus plan with this special offer
           </SecondHeader>
