@@ -1,6 +1,11 @@
 import { GeneralContainer, Container, ImageCompany } from "./elements";
+import { Company } from "@/models/SocialProof";
 
-const CompanyCards = ({ companies }) => {
+interface CompanyCardsProps {
+  companies: Company[];
+}
+
+const CompanyCards = ({ companies }: CompanyCardsProps) => {
   return (
     <GeneralContainer>
       {companies.map((company) => (

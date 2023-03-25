@@ -1,7 +1,12 @@
 import { Card, Container, RightSide, Header, Description } from "./elements";
 import Image from "next/image";
+import { Solution } from "@/models/Solutions";
 
-const SolutionsCards = ({ solutions }) => {
+interface SolutionsCardsProps {
+  solutions: Solution[];
+}
+
+const SolutionsCards = ({ solutions }: SolutionsCardsProps) => {
   return (
     <Container>
       {solutions.map((solution) => (

@@ -1,5 +1,3 @@
-import { TextField, FormControl, InputLabel, Select } from "@mui/material";
-
 import SecondHeader from "@/shared/copies/headers/secondHeader/index";
 import { ParagraphElement } from "@/shared/copies/paragraph/elements";
 import Button from "@/shared/button";
@@ -8,18 +6,26 @@ import InputText from "@/shared/inputs/text";
 import { Form, ContainerInputs, Policy } from "./elements";
 import InputGroup from "@/shared/inputs/group";
 
-const ContactForm = ({ contactInfo }) => {
+import Contact from "@/models/Contact";
+
+interface ContactFormProps {
+  contactInfo: Contact;
+}
+
+const ContactForm = ({ contactInfo }: ContactFormProps) => {
   return (
     <Form>
-      <SecondHeader>Let us find your ideal workspace</SecondHeader>
-      <ParagraphElement secondary>
-        Complete the form and a WeWork team member will be in touch with you
-        shortly
-      </ParagraphElement>
+      <SecondHeader>{contactInfo.header}</SecondHeader>
+      <ParagraphElement secondary>{contactInfo.description}</ParagraphElement>
       <ContainerInputs>
         {contactInfo.inputs.map((input) => {
           if (input.type === "group") return <InputGroup input={input} />;
-          return <InputText input={input} />;
+          return (
+            <InputText
+              key={input.label}
+              input={input}
+            />
+          );
         })}
       </ContainerInputs>
       <Policy>

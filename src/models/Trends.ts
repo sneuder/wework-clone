@@ -1,4 +1,4 @@
-interface Trend {
+export interface Trend {
   tag: string;
   urlImage: string;
   header: string;

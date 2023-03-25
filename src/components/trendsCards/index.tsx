@@ -1,8 +1,13 @@
 import { GeneralContainer } from "./elements";
 import TrendCard from "@/shared/trendCard";
 import trendCardOptions from "@/styles/trendCardOptions";
+import { Trend } from "@/models/Trends";
 
-const TrensCards = ({ trends }) => {
+interface TrendsCardsProps {
+  trends: Trend[];
+}
+
+const TrensCards = ({ trends }: TrendsCardsProps) => {
   return (
     <GeneralContainer>
       {trends.map((trend) => (

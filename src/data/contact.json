@@ -1,4 +1,7 @@
 {
+  "header": "Let us find your ideal workspace",
+  "description": "Complete the form and a WeWork team member will be in touch with you shortly",
+  "urlImage": "https://ctfassets.imgix.net/vh7r69kgcki3/3xm70BLNewYg0oQ0uqACIq/ea3bdb8af2c9eac51de863d15f493618/Web_72DPI-VIR_TYS_COF_OFFICE.jpg?auto=format%20compress&fit=crop&q=50&w=1200&h=675",
   "inputs": [
     {
       "type": "text",

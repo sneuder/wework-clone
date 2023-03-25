@@ -1,3 +1,7 @@
+export interface Company {
+  urlImage: string;
+}
+
 interface SocialProof {
   header: string;
   description: string;
